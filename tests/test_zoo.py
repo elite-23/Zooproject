@@ -72,15 +72,15 @@ class TestZoo(TestCase):
         zookeeper_1.add_animal(animal_1, fence_1)
         zookeeper_1.feed(animal_1)
 
-        result :int=round(animal_1.height+(animal_1.height*0.02),3)
+        result :int=animal_1.height
         message :str =f"Error: the function feed_animal should increase animal_1's height because there is still space in fence_1" 
         self.assertEqual(result, 10.2, message)
 
-        result :int=round(animal_1.width+(animal_1.width*0.02),3)
+        result :int=animal_1.width
         message :str =f"Error: the function feed_animal should increase animal_1's width because there is still space in fence_1" 
         self.assertEqual(result, 1.02, message)
 
-        result :int=round(animal_1.health*0.01,3)
+        result :int=animal_1.health
         message :str =f"Error: the function feed_animal should increase animal_1's health because there is still space in fence_1" 
         self.assertEqual(result, 20.2, message)
 

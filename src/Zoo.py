@@ -188,11 +188,3 @@ class Zoo:
                             z+="##############################\n"
         
         print(z)
-
-A1=Animal("P","o",2,2,2,"sole")
-F1=Fence(23,33,"sole")
-K1=ZooKeeper("l","m",2)
-K1.add_animal(A1,F1)
-
-Z=Zoo([F1],[K1])
-Z.describe_zoo()
